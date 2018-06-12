@@ -1,0 +1,8 @@
+<div class="pagina" *ngIf="pagitionData" >
+  <button type="button"   [disabled]="pagitionData.current==0"  (click)="newPageClicked(+pagitionData.current-1)"> < </button>
+<span class="page-button" *ngFor=" let key of  pagitionData.links | keys" >
+
+<button type="button"   [ngClass]="{'current':key.key==pagitionData.current}" (click)="newPageClicked(+key.key)"> {{+key.key+1 }}</button>
+</span>
+  <button type="button"   [disabled]="pagitionData.current==+pagitionData.total-1"  (click)="newPageClicked(+pagitionData.current+1)"> > </button>
+</div>

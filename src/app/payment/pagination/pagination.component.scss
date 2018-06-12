@@ -1,0 +1,23 @@
+
+
+
+button, html [type="button"], [type="reset"], [type="submit"]{
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-size: 12px;
+  width: 25px;
+  height: 25px;
+
+  border: 1px solid #cccfd1;
+  font-family:
+    "Open Sans", sans-serif
+
+}
+.current{
+  background-color: #636363;
+  color: white;
+}
+
+.pagina{
+  margin-bottom: 40px;
+}

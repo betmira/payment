@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/scss/bootstrap.scss';
+
+//$FontPathSourceSansPro: "../node_modules/npm-font-source-sans-pro/fonts/source-sans-pro";
+
+//@import '~npm-font-source-sans-pro/source-sans-pro.scss';
+
+//@import '~npm-font-source-sans-pro';
+//$FontPathSourceSansPro: "../fonts/source-sans-pro";
+//@import url('https://fonts.googleapis.com/css?family=Song+Myung');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:Light');
+
+//$font-family:  "Source Sans Pro script=all rev=1",  sans-serif, "Adobe Blank" ;//'Source Sans Pro',  script=all rev=2", "Adobe Blank";
+//$font-family:  'Song Myung', serif;
+$font-family:"Source Sans Pro", sans-serif;
+$font-size: 48px;
+$background-color: #766482; // SlateGray   ;
+
+
+body{
+  font-family: $font-family;
+  background-color: #e3e2e2;;
+}

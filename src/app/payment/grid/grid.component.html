@@ -1,0 +1,21 @@
+<div class="table">
+  <div class="row title" >
+    <div class="col-md-5 to-left ">Supplier</div>
+    <div class="col-md-3 ">Pound Rating</div>
+    <div class="col-md-2 ">Reference</div>
+    <div class="col-md-2">Value</div>
+  </div>
+  <div *ngFor="let payment of paymentData; let i = index; let odd = odd"
+       [class.odd]="odd">
+    <div class="row border-top hover-row" (click)="open(payment)" >
+      <div class="col-md-5 to-left border-right">{{payment.payment_supplier}}</div>
+      <div class="col-md-3 border-right ">
+        <span [innerHTML]="getHtml(payment.payment_cost_rating)"></span>
+      </div>
+      <div class="col-md-2 border-right">{{payment.payment_ref}}</div>
+      <div class="col-md-2 ">£{{payment.payment_amount.replace('.',',')}}</div>
+    </div>
+  </div>
+</div>
+
+

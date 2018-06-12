@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="box">
+  <div class="title"> Where your money goes</div>
+  <div class="description">Payments made by Chichester District Council to individual suppliers with a value over £500 made within October.</div>
+    </div>
+  <div class="container">
+      <app-filtr (buttonClicked)="buttonClicked($event)"></app-filtr>
+      <app-grid [paymentData] = "paymentData"></app-grid>
+    <app-pagination class="pagina" [pagitionData] = "pagitionData" (pageClicked)="newPageClicked($event)"></app-pagination>
+  </div>
